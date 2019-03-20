@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoolPlay</title>
+    <meta name="description" content="DESCRIPCION MENOR DE 155 CARACTERES" />
+ 
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@PUBLICADOR">
+    <meta name="twitter:title" content="TITULO PAGINA">
+    <meta name="twitter:description" content="DESCRIPCION MENOR DE 200 CARACTERES">
+    <meta name="twitter:creator" content="@AUTOR">
+    <!-- Las imágenes deben ser de al menos 120 x 120px para la tarjeta de Twitter Summary -->
+    <meta name="twitter:image" content="http://www.MISITIO.COM/IMAGEN.JPG">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="TITULO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.MISITIO.COM/" />
+    <meta property="og:image" content="http://www.MISITIO.COM/IMAGEN.JPG" />
+    <meta property="og:description" content="DESCRIPCION" />
+    <meta property="og:site_name" content="NOMBRE DE LA WEB" />
+    <meta property="fb:admins" content="ID NUMERICO DE FACEBOOK" />
+
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-prices.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- preloader Structure -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <!-- nav Structure -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">CoolPlay</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down sidenav-color">
+                        <li><a href="index.html#what-is">¿Qué es CoolPlay?</a></li>
+                        <li><a href="movies.html">Películas</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="prices.html">Membresías</a></li>
+                        <li><a href="register.html">Registrarse</a></li> 
+                        <li><a class="login teal lighten-2 hoverable" href="badges.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Responsive sidenav Structure -->
+        <ul class="sidenav sidenav-color" id="mobile-demo">
+            <li><a href="#what-is">¿Qué es Coolplay?</a></li>
+            <li><a href="">Películas</a></li>
+            <li><a href="">Series</a></li>
+            <li><a href="prices.html">Membresías</a></li>
+            <li><a href="register.html">Registrarse</a></li> 
+            <li><a class="login teal lighten-2 hoverable" href="badges.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                    </form>
+                </div>
+            </nav>
+        </ul>
+    </header>
+    <div class="container center-align">
+        <br>
+        <br>
+        <h1>Precios membresía</h1>
+        <p class="teal-text text-lighten-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur error recusandae omnis saepe voluptate. Distinctio architecto officiis itaque dignissimos sequi, nemo maxime obcaecati quasi magni optio quis doloribus facilis minus.</p>
+    </div>
+    <!-- PRICING PLANS -->
+    <section class="pricing-plans">
+        <!-- Pricing Tables -->
+        <div class="pricing-tables">
+        <!-- Plan Features -->
+        <div class="pricing-plan">
+            <h2 class="plan-title">Basic</h2>
+            <div class="plan-cost">
+            <p class="plan-price">$29</p>
+            <span>/</span> 
+            <p class="plan-type">Monthly</p>
+            </div>
+            <ul class="plan-features">
+            <li>Unlimited Templates</li>
+            <li>Responsive / Mobile Friendly</li>
+            <li><span>Unlimited Training</span></li>
+            <li><span>Custom Branding</span></li>
+            <li><span>Resource Library</span></li>
+            <li><span>Dedicated Support</span></li>
+            </ul>
+            <a class="btn btn-plan" href="">Select Plan</a>
+        </div>
+        <!-- "Basic" Plan -->
+        <div class="pricing-plan">
+            <h2 class="plan-title">Super</h2>
+            <div class="plan-cost">
+            <p class="plan-price">$39</p>
+            <span>|</span> 
+            <p class="plan-type">Monthly</p>
+            </div>
+            <ul class="plan-features">
+            <li>Unlimited Templates</li>
+            <li>Responsive / Mobile Friendly</li>
+            <li>Unlimited Training</li>
+            <li><span>Custom Branding</span></li>
+            <li><span>Resource Library</span></li>
+            <li><span>Dedicated Support</span></li>
+            </ul>
+            <a class="btn btn-plan" href="">Select Plan</a>
+        </div>
+        <!-- "Premium" Plan -->
+        <div class="pricing-plan featured-plan">
+            <div class="featured-ribbon">Best Value</div>
+            <h2 class="plan-title">Premium</h2>
+            <div class="plan-cost">
+            <p class="plan-price">$59</p>
+            <span>/</span> 
+            <p class="plan-type">Monthly</p>
+            </div>
+            <ul class="plan-features">
+            <li>Unlimited Templates</li>
+            <li>Responsive / Mobile Friendly</li>
+            <li>Unlimited Training</li>
+            <li>Custom Branding</li>
+            <li><span>Resource Library</span></li>
+            <li><span>Dedicated Support</span></li>
+            </ul>
+            <a class="btn sbtn-plan cta" href="">Select Plan</a>
+        </div>
+        <!-- "Ultmate" Plan -->
+        <div class="pricing-plan">
+            <h2 class="plan-title">Ultimate</h2>
+            <div class="plan-cost">
+            <p class="plan-price">$89</p>
+            <span>/</span> 
+            <p class="plan-type">Monthly</p>
+            </div>
+            <ul class="plan-features">
+            <li>Unlimited Templates</li>
+            <li>Responsive / Mobile Friendly</li>
+            <li>Unlimited Training </li>
+            <li>Custom Branding</li>
+            <li>Resource Library</li>
+            <li>Dedicated Support</li>
+            </ul>
+            <a class="btn btn-plan" href="">Select Plan</a>
+        </div>
+        </div>
+    </section>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container foot">
+        <div class="row">
+            <div class="col s6 m4">
+                <h6>Información adicional</h6>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Registrarse</li>
+                    <li>Contáctanos</li>
+                    <li>Política de privacidad</li>
+                    <li>Términos y condiciones de uso</li>
+                </ul>
+            </div>
+            <div class="col s6 m4">
+                <h6>Redes sociales</h6>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m4">
+                <br>
+                <br>
+                <nav class="">
+                    <div class="nav-wrapper">
+                        <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Buscar películas, series, capítulos" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <br>
+        <div class="center-align">
+            &copy; CoolPlay 2018
+        </div>    
+        <br>
+    </footer>
+</body>
+</html>

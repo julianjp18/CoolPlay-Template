@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoolPlay</title>
+    <meta name="description" content="DESCRIPCION MENOR DE 155 CARACTERES" />
+ 
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@PUBLICADOR">
+    <meta name="twitter:title" content="TITULO PAGINA">
+    <meta name="twitter:description" content="DESCRIPCION MENOR DE 200 CARACTERES">
+    <meta name="twitter:creator" content="@AUTOR">
+    <!-- Las imágenes deben ser de al menos 120 x 120px para la tarjeta de Twitter Summary -->
+    <meta name="twitter:image" content="http://www.MISITIO.COM/IMAGEN.JPG">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="TITULO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.MISITIO.COM/" />
+    <meta property="og:image" content="http://www.MISITIO.COM/IMAGEN.JPG" />
+    <meta property="og:description" content="DESCRIPCION" />
+    <meta property="og:site_name" content="NOMBRE DE LA WEB" />
+    <meta property="fb:admins" content="ID NUMERICO DE FACEBOOK" />
+
+
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- preloader Structure -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <!-- nav Structure -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">CoolPlay</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down sidenav-color">
+                        <li><a href="#what-is">¿Qué es CoolPlay?</a></li>
+                        <li><a href="movies.html">Películas</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="prices.html">Membresías</a></li>
+                        <li><a href="register.html">Registrarse</a></li>  
+                        <li><a class="login teal lighten-2 hoverable" href="badges.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Responsive sidenav Structure -->
+        <ul class="sidenav sidenav-color" id="mobile-demo">
+            <li><a href="#what-is">¿Qué es CoolPlay?</a></li>
+            <li><a href="movies.html">Películas</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="prices.html">Membresías</a></li>
+            <li><a href="register.html">Registrarse</a></li> 
+            <li><a class="login teal lighten-2 hoverable" href="badges.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                    </form>
+                </div>
+            </nav>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="image">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h1>CoolPlay</h1>
+                        <h4>El mejor sitio para ver tus películas y series favoritas</h4>
+                        <br>
+                        <br>
+                        <a class="button-start teal lighten-2 hoverable" href="#top-info">¡Empezar ya!</a>
+                    </div>
+                    <div class="col m6 l6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container cwhat-is" id="what-is">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col l12 center-align">
+                <h2 class="">¿Qué es <strong>CoolPlay</strong>?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi dolorum quasi vel, provident quibusdam et explicabo laboriosam fuga, ullam sit excepturi corrupti. Nulla fugit neque recusandae voluptates ratione non.</p>
+                <br>
+                <a class="button-membership teal lighten-2 hoverable" href="">Adquiere una membresía</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="top-info">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col l8 left-align">
+                <h2 class="">Top películas y series</h2>
+            </div>
+            <div class="col l4 right-align">
+                <br><br>
+                <nav class="">
+                    <div class="nav-wrapper">
+                        <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Buscar películas, series, capítulos" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="top">
+        <!-- Flickity HTML init -->
+        <div class="carousel-flickity"
+                data-flickity='{ "wrapAround": true, "imagesLoaded": true, "percentPosition": false, "pageDots": false, "freeScroll": true }'>
+            <div class="div1" onmouseover="hoverImg(this,'div1')" onmouseout="normalImg(this,'div1')">
+                <section class="text-img text-div1" id="text-div1" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div1" id="img-div1"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div2" onmouseover="hoverImg(this,'div2')" onmouseout="normalImg(this,'div2')">
+                    <section class="text-img text-div1" id="text-div2" style="visibility: hidden; opacity: 0;">
+                        <h5><a href="movie.html">Text yeah!</a></h5>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                        <br>
+                        
+                        <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                    </section>
+                    <img class="img-div2" id="img-div2"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div3" onmouseover="hoverImg(this,'div3')" onmouseout="normalImg(this,'div3')">
+                <section class="text-img text-div3" id="text-div3" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div3" id="img-div3"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div4" onmouseover="hoverImg(this,'div4')" onmouseout="normalImg(this,'div4')">
+                <section class="text-img text-div4" id="text-div4" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div4" id="img-div4"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div5" onmouseover="hoverImg(this,'div5')" onmouseout="normalImg(this,'div5')">
+                <section class="text-img text-div5" id="text-div5" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div5" id="img-div5"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div6" onmouseover="hoverImg(this,'div6')" onmouseout="normalImg(this,'div6')">
+                <section class="text-img text-div6" id="text-div6" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div6" id="img-div6"  src="img/1.jpg" alt="orange tree" />
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col m12 left-align">
+                <h4 class=""><a class="title-link" href=""><i class="medium material-icons">local_movies</i> Películas agregadas recientemente <i class="material-icons">chevron_right</i></a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod excepturi vitae rerum! Earum iste, dolore minus mollitia, dolorem vel suscipit, distinctio omnis voluptas sed quasi facilis neque doloremque animi explicabo.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="movies">
+         <!-- Flickity HTML init -->
+         <div class="carousel-flickity"
+         data-flickity='{ "wrapAround": true, "imagesLoaded": true, "percentPosition": false, "pageDots": false, "freeScroll": true }'>
+            <div class="div7" onmouseover="hoverImg(this,'div7')" onmouseout="normalImg(this,'div7')">
+                <section class="text-img text-div7" id="text-div7" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div7" id="img-div7"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div8" onmouseover="hoverImg(this,'div8')" onmouseout="normalImg(this,'div8')">
+                    <section class="text-img text-div8" id="text-div8" style="visibility: hidden; opacity: 0;">
+                        <h5><a href="movie.html">Text yeah!</a></h5>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                        <br>
+                        
+                        <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                    </section>
+                    <img class="img-div8" id="img-div8"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div9" onmouseover="hoverImg(this,'div9')" onmouseout="normalImg(this,'div9')">
+                <section class="text-img text-div9" id="text-div9" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div9" id="img-div9"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div10" onmouseover="hoverImg(this,'div10')" onmouseout="normalImg(this,'div10')">
+                <section class="text-img text-div10" id="text-div10" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div10" id="img-div10"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div11" onmouseover="hoverImg(this,'div11')" onmouseout="normalImg(this,'div11')">
+                <section class="text-img text-div11" id="text-div11" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div11" id="img-div11"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div12" onmouseover="hoverImg(this,'div12')" onmouseout="normalImg(this,'div12')">
+                <section class="text-img text-div12" id="text-div12" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="movie.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="movie.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div12" id="img-div12"  src="img/1.jpg" alt="orange tree" />
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="categories">
+        <div class="container">
+            <h5>Contamos con las mejores categorias de películas para que disfrutes tus días frente a la pantalla de la mejor manera:</h5>
+            <br>
+            <div class="row center-align">
+                <div class="col s12 m3 l3">
+                    <a class="btn-grad grad1 hoverable" href="">Comedia</a>
+                </div>
+                <div class="col s12 m3 l3">
+                    <a class="btn-grad grad2 hoverable" href="">Documental</a>   
+                </div>
+                <div class="col s12 m3 l3">
+                    <a class="btn-grad grad3 hoverable" href="">Infantil</a>
+                </div>
+                <div class="col s12 m3 l3">
+                    <a class="btn-grad grad4 hoverable"  href="">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col m12 left-align">
+                <h4 class=""><a class="title-link" href=""><i class="medium material-icons">ondemand_video</i> Series agregadas recientemente <i class="material-icons">chevron_right</i></a></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere est consectetur saepe, aspernatur perferendis eveniet obcaecati nobis earum optio, omnis delectus corrupti, accusamus minus dolore illo. Quis, officia magni.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="series">
+        <!-- Flickity HTML init -->
+        <div class="carousel-flickity"
+        data-flickity='{ "wrapAround": true, "imagesLoaded": true, "percentPosition": false, "pageDots": false, "freeScroll": true }'>
+           <div class="div13" onmouseover="hoverImg(this,'div13')" onmouseout="normalImg(this,'div13')">
+               <section class="text-img text-div13" id="text-div13" style="visibility: hidden; opacity: 0;">
+                   <h5><a href="serie.html">Text yeah!</a></h5>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                   <br>
+                   
+                   <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+               </section>
+               <img class="img-div13" id="img-div13"  src="img/1.jpg" alt="orange tree" />
+           </div>
+           <div class="div14" onmouseover="hoverImg(this,'div14')" onmouseout="normalImg(this,'div14')">
+                   <section class="text-img text-div14" id="text-div14" style="visibility: hidden; opacity: 0;">
+                       <h5><a href="serie.html">Text yeah!</a></h5>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                       <br>
+                       
+                       <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+                   </section>
+                   <img class="img-div14" id="img-div14"  src="img/1.jpg" alt="orange tree" />
+           </div>
+           <div class="div15" onmouseover="hoverImg(this,'div15')" onmouseout="normalImg(this,'div15')">
+               <section class="text-img text-div15" id="text-div15" style="visibility: hidden; opacity: 0;">
+                   <h5><a href="serie.html">Text yeah!</a></h5>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                   <br>
+                   
+                   <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+               </section>
+               <img class="img-div15" id="img-div15"  src="img/1.jpg" alt="orange tree" />
+           </div>
+           <div class="div16" onmouseover="hoverImg(this,'div16')" onmouseout="normalImg(this,'div16')">
+               <section class="text-img text-div16" id="text-div16" style="visibility: hidden; opacity: 0;">
+                   <h5><a href="serie.html">Text yeah!</a></h5>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                   <br>
+                   
+                   <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+               </section>
+               <img class="img-div16" id="img-div16"  src="img/1.jpg" alt="orange tree" />
+           </div>
+           <div class="div17" onmouseover="hoverImg(this,'div17')" onmouseout="normalImg(this,'div17')">
+               <section class="text-img text-div17" id="text-div17" style="visibility: hidden; opacity: 0;">
+                   <h5><a href="serie.html">Text yeah!</a></h5>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                   <br>
+                   
+                   <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+               </section>
+               <img class="img-div17" id="img-div17"  src="img/1.jpg" alt="orange tree" />
+           </div>
+           <div class="div18" onmouseover="hoverImg(this,'div18')" onmouseout="normalImg(this,'div18')">
+               <section class="text-img text-div18" id="text-div18" style="visibility: hidden; opacity: 0;">
+                   <h5><a href="serie.html">Text yeah!</a></h5>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                   <br>
+                   
+                   <a class="btn-movie" href="serie.html"><i class="large material-icons">play_circle_outline</i></a>
+               </section>
+               <img class="img-div18" id="img-div18"  src="img/1.jpg" alt="orange tree" />
+           </div>
+       </div>
+    </section>
+    <div class="contact">
+        <br>
+        <h2 class="center-align">Contáctanos</h2>
+        <p class="center-align" style="color: #bdbdbd">Escribenos para más información, con gusto te responderemos todas tus dudas</p>
+        <section class="container">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <input id="first_name" type="text" class="validate" required>
+                            <label for="first_name">Nombres</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">person_pin</i>
+                            <input id="last_name" type="text" class="validate" required>
+                            <label for="last_name">Apellidos</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">border_color</i>
+                            <textarea id="textarea1" class="materialize-textarea" rows="3" cols="3" data-length="240"></textarea>
+                            <label for="textarea1">Mensaje</label>
+                        </div>
+                    </div>
+                    <div class="row">   
+                        <p class="center-align">
+                            <button class="waves-effect waves-light btn hoverable" type="submit"><i class="material-icons right">send</i>Enviar</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <br>
+    <div class="container foot">
+        <div class="row">
+            <div class="col s6 m4">
+                <h6>Información adicional</h6>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Registrarse</li>
+                    <li>Contáctanos</li>
+                    <li>Política de privacidad</li>
+                    <li>Términos y condiciones de uso</li>
+                </ul>
+            </div>
+            <div class="col s6 m4">
+                <h6>Redes sociales</h6>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m4">
+                <br>
+                <br>
+                <nav class="">
+                    <div class="nav-wrapper">
+                        <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Buscar películas, series, capítulos" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <br>
+        <div class="center-align">
+            &copy; CoolPlay 2018
+        </div>    
+        <br>
+    </footer>
+</body>
+</html>

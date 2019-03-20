@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoolPlay</title>
+    <meta name="description" content="DESCRIPCION MENOR DE 155 CARACTERES" />
+ 
+    <!-- Schema.org markup para Google+ -->
+    <meta itemprop="name" content="NOMBRE O TITULO">
+    <meta itemprop="description" content="DESCRIPCION DE LA PAGINA">
+    <meta itemprop="image" content="http://www.MISITIO.COM/IMAGEN.JPG">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@PUBLICADOR">
+    <meta name="twitter:title" content="TITULO PAGINA">
+    <meta name="twitter:description" content="DESCRIPCION MENOR DE 200 CARACTERES">
+    <meta name="twitter:creator" content="@AUTOR">
+    <!-- small image size 120x120px, large image size 280x150px -->
+    <meta name="twitter:image" content="http://www.MISITIO.COM/IMAGEN.JPG">
+    <meta name="twitter:data1" content="3,00 EUROS">
+    <meta name="twitter:label1" content="PRECIO">
+    <meta name="twitter:data2" content="NEGRO">
+    <meta name="twitter:label2" content="COLOR">
+    <!-- Añade tantos dataX y labelX como quieras, sabiendo que corresponden al valor y la etiqueta -->
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="TITULO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.MISITIO.COM/" />
+    <!-- 1200x630px image size -->
+    <meta property="og:image" content="http://www.MISITIO.COM/IMAGEN.JPG" />
+    <meta property="og:description" content="DESCRIPCION" />
+    <meta property="og:site_name" content="NOMBRE DE LA WEB" />
+    <meta property="og:price:amount" content="PRECIO (CANTIDAD)" />
+    <meta property="og:price:currency" content="MONEDA" />
+    
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- preloader Structure -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <!-- nav Structure -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">CoolPlay</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down sidenav-color">
+                        <li><a href="index.html#what-is">¿Qué es CoolPlay?</a></li>
+                        <li><a href="movies.html">Películas</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="prices.htm">Membresías</a></li>
+                        <li><a href="register.html">Registrarse</a></li> 
+                        <li><a class="login teal lighten-2 hoverable" href="login.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Responsive sidenav Structure -->
+        <ul class="sidenav sidenav-color" id="mobile-demo">
+            <li><a href="#what-is">¿Qué es ENFLIX?</a></li>
+            <li><a href="movies.html">Películas</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="prices.html">Membresías</a></li>
+            <li><a href="register.html">Registrarse</a></li> 
+            <li><a class="login teal lighten-2 hoverable" href="login.html">Iniciar sesión <i class="material-icons right">account_circle</i></a></li>  
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                    </form>
+                </div>
+            </nav>
+        </ul>
+    </header>
+    <div class="section white">
+        <div class="row container center-align">
+            <div class="col s12 m12 description">
+                <br>
+                <br>
+                <span class="title-movie">Series</span>
+                <section class="busqueda row">
+                    <form action="">
+                        <div class="input-field col s12 m6 l6">
+                        <select>
+                            <option value="" disabled selected>Selecciona una categoria</option>
+                            <option value="1">Comedia</option>
+                            <option value="2">Infantil</option>
+                            <option value="3">Documental</option>
+                        </select>
+                        <label>Categoria</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                        </div>
+                    </form>
+                </section>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="serie.html"><img src="img/1.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <a href="serie.html"><span class="card-title teal-text text-lighten-2">The best</span></a>
+                                <p class="grey-text text-darken-3 lighten-3">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Relacionado</h2>
+        <br>
+    </div>
+    <section class="top">
+        <!-- Flickity HTML init -->
+        <div class="carousel-flickity"
+                data-flickity='{ "wrapAround": true, "imagesLoaded": true, "percentPosition": false, "pageDots": false, "freeScroll": true }'>
+            <div class="div1" onmouseover="hoverImg(this,'div1')" onmouseout="normalImg(this,'div1')">
+                <section class="text-img text-div1" id="text-div1" style="visibility: hidden; opacity: 0;">
+                    <h5><a href="serie1.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="serie1.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div1" id="img-div1"  src="img/1.jpg" alt="orange tree" />
+            </div>
+            <div class="div2" onmouseover="hoverImg(this,'div2')" onmouseout="normalImg(this,'div2')">
+                <section class="text-img text-div2" id="text-div2" style="visibility: hidden; opacity: 0;">
+                        <h5><a href="serie1.html">Text yeah!</a></h5>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis dolores doloremque.
+                    <br>
+                    
+                    <a class="btn-movie" href="serie1.html"><i class="large material-icons">play_circle_outline</i></a>
+                </section>
+                <img class="img-div2" id="img-div2"  src="img/1.jpg" alt="submerged" />
+            </div>
+            
+            <img src="img/1.jpg" alt="look-out" />
+            <img src="img/1.jpg" alt="One World Trade" />
+            <img src="img/1.jpg" alt="drizzle" />
+            <img src="img/1.jpg" alt="cat nose" />
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container foot">
+        <div class="row">
+            <div class="col s6 m4">
+                <h6>Información adicional</h6>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Registrarse</li>
+                    <li>Contáctanos</li>
+                    <li>Política de privacidad</li>
+                    <li>Términos y condiciones de uso</li>
+                </ul>
+            </div>
+            <div class="col s6 m4">
+                <h6>Redes sociales</h6>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m4">
+                <br>
+                <br>
+                <nav class="">
+                    <div class="nav-wrapper">
+                        <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Buscar películas, series, capítulos" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <br>
+        <div class="center-align">
+            &copy; CoolPlay 2018
+        </div>    
+        <br>
+    </footer>
+    <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+</body>
+</html>
